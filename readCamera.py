@@ -5,7 +5,6 @@ contador = 0
 while True:
     _, frame = cap.read()
     
-    
     k = c.waitKey(1)
     if k == ord('q'):
         print('q was pressed - finishing...')
@@ -18,8 +17,5 @@ while True:
 
     c.imshow('frame', frame)
     
-  
-# After the loop release the cap object
 frame.release()
-# Destroy all the windows
 c.destroyAllWindows()
