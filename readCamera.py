@@ -7,7 +7,6 @@ while True:
     
     k = c.waitKey(1)
     if k == ord('q'):
-        print('q was pressed - finishing...')
         break
     elif k == ord('t'):
         image_path = 'Frame_{}.jpg'.format(contador)  
